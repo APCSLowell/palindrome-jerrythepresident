@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.Scanner; // Import the Scanner class to read text files
 
 public class PalindromeChecker {
-public void tester()
+public void static tester()
 {
   //String lines[] = loadStrings("palindromes.txt");
   String[] lines = new String[6]; 
@@ -23,6 +23,7 @@ public void tester()
         e.printStackTrace();
     }
   System.out.println("there are " + lines.length + " lines");
+  
   for (int i=0; i < lines.length; i++) 
   {
     if(palindrome(lines[i])==true)
