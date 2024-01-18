@@ -5,24 +5,9 @@ import java.util.Scanner; // Import the Scanner class to read text files
 public class PalindromeChecker {
 public void tester()
 {
-  //String lines[] = loadStrings("palindromes.txt");
-  String[] lines = new String[6]; 
-    try{
-        File myFile = new File("palindromes.txt");
-        Scanner myReader = new Scanner(myFile);
-        int counter = 0;
-        while (myReader.hasNextLine()) {
-            String data = myReader.nextLine();
-            lines[counter] = data;
-            counter++;
-        }
-        myReader.close();
-    }
-    catch (FileNotFoundException e) {
-        System.out.println("An error occurred.");
-        e.printStackTrace();
-    }
-  System.out.println("there are " + lines.length + " lines");
+ String[] lines = {"test", "rotator", "rewriter", "nurses run", "Madam, I'm Adam!", "A Man! A Plan! A Canal! Panama!"};
+        System.out.println("There are " + lines.length + " lines");
+
         for (String line : lines) {
             if (isPalindrome(line)) {
                 System.out.println(line + " IS a palindrome.");
