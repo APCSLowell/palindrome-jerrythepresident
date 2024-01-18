@@ -6,7 +6,7 @@ public class PalindromeChecker {
 public void tester()
 {
   //String lines[] = loadStrings("palindromes.txt");
-  String[] lines = new String[6];
+  String[] lines = new String[6]; 
     try{
         File myFile = new File("palindromes.txt");
         Scanner myReader = new Scanner(myFile);
@@ -23,25 +23,28 @@ public void tester()
         e.printStackTrace();
     }
   System.out.println("there are " + lines.length + " lines");
-        for (String line : lines) {
-            if (isPalindrome(line)) {
-                System.out.println(line + " IS a palindrome.");
-            } else {
-                System.out.println(line + " is NOT a palindrome.");
-            }
-        }
+  for (int i=0; i < lines.length; i++) 
+  {
+    if(palindrome(lines[i])==true)
+    {
+      System.out.println(lines[i] + " IS a palindrome.");
+    }
+    else
+    {
+      System.out.println(lines[i] + " is NOT a palindrome.");
+    }
+  }
 }
-public boolean isPalindrome(String sWord)
+public boolean palindrome(String word)
 {
-        String cleanWord = sWord.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        String cleanWord = word.replaceAll("[^a-zA-Z]", "").toLowerCase();
         return cleanWord.equals(reverse(cleanWord));
 }
- 
-public String reverse(String sWord)
+public String reverse(String str)
 {
         StringBuilder reversed = new StringBuilder();
-        for (int i = sWord.length() - 1; i >= 0; i--) {
-            reversed.append(sWord.charAt(i));
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed.append(str.charAt(i));
         }
         return reversed.toString();
 }
