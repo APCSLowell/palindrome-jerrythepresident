@@ -41,7 +41,7 @@ public boolean palindrome(String sWord)
         return cleanWord.equals(reverse(cleanWord));
 }
   
-public String reverse(String str)
+public String reverse(String sWord)
 {
         StringBuilder reversed = new StringBuilder();
         for (int i = sWord.length() - 1; i >= 0; i--) {
