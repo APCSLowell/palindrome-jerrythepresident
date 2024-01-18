@@ -23,17 +23,13 @@ public void tester()
         e.printStackTrace();
     }
   System.out.println("there are " + lines.length + " lines");
-  for (int i=0; i < lines.length; i++) 
-  {
-    if(palindrome(lines[i])==true)
-    {
-      System.out.println(lines[i] + " IS a palindrome.");
-    }
-    else
-    {
-      System.out.println(lines[i] + " is NOT a palindrome.");
-    }
-  }
+        for (String line : lines) {
+            if (isPalindrome(line)) {
+                System.out.println(line + " IS a palindrome.");
+            } else {
+                System.out.println(line + " is NOT a palindrome.");
+            }
+        }
 }
 public boolean isPalindrome(String sWord)
 {
