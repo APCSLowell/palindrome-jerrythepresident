@@ -37,7 +37,8 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-    String reverse = new StringBuffer(word).reverse().toString();
+    String cleanWord = word.replaceAll("[^a-zA-Z]", "").toLowerCase();
+    String reverse = new StringBuffer(cleanWord).reverse().toString();
     return reverse.equals(word);
 }
 }
