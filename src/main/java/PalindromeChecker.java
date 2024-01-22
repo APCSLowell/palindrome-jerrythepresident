@@ -29,11 +29,11 @@ public void tester()
   {
     if(palindrome(lines[i])==true)
     {
-      System.out.println(lines[i] + " IS a palindrome.");
+      System.out.println(true);
     }
     else
     {
-      System.out.println(lines[i] + " is NOT a palindrome.");
+      System.out.println(false);
     }
   }
   
