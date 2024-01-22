@@ -41,10 +41,16 @@ public boolean palindrome(String word)
   }
   return false;
 }
-public String reverse(String str)
+public String noCapitals(String str)
 {
-    String sNew = new String();
-    //your code here
-    return sNew;
+      str.toLowerCase();
+      for(int i = 0; i < str.length(); i++)
+     if(!str.substring(i,i+1).equals(" "))
+       result=result + str.substring(i,i+1);
+  return result;
+   for(int i = 0; i < sString.length(); i++)
+    if(Character.isLetter(sString.charAt(i)))
+      result = result + sString.substring(i,i+1);
+  return result;
 }
 }
