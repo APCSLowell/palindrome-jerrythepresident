@@ -35,13 +35,7 @@ public void tester()
     }
   }
 }
-public boolean palindrome(String word)
-{
-  for(int i=0; i<word.length(); i++){
-  }
-  return false;
-}
-public Boolean palindrome(String str)
+public boolean palindrome(String str)
 {
       str.toLowerCase();
       String result="";
