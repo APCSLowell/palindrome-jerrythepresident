@@ -44,13 +44,13 @@ public boolean palindrome(String word)
 public String noCapitals(String str)
 {
       str.toLowerCase();
-      for(int i = 0; i < str.length(); i++)
-     if(!str.substring(i,i+1).equals(" "))
+      for(int i = 0; i < str.length(); i++){
+     if(!str.substring(i,i+1).equals(" ")){
        result=result + str.substring(i,i+1);
-  return result;
-   for(int i = 0; i < sString.length(); i++)
-    if(Character.isLetter(sString.charAt(i)))
-      result = result + sString.substring(i,i+1);
-  return result;
+     }
+   for(int i = 0; i < result.length(); i++)
+    if(Character.isLetter(result.charAt(i)))
+      result1 = result1 + result.substring(i,i+1);
+  return result1;
 }
 }
