@@ -36,7 +36,10 @@ public void tester()
       System.out.println(false);
     }
   }
+
   
+}
+   
   public boolean palindrome(String word)
 {
     cleanWord = word.replaceAll("[^a-zA-Z]", "").toLowerCase();
@@ -44,6 +47,4 @@ public void tester()
     return reverse.equals(word);
 }
   
-}
-
 }
