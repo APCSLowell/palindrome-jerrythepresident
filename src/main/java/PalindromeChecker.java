@@ -27,17 +27,18 @@ public void tester()
   {
     if(palindrome(lines[i])==true)
     {
-      System.out.println(lines[i] + " IS a palindrome.");
+      System.out.println(true);
     }
     else
     {
-      System.out.println(lines[i] + " is NOT a palindrome.");
+      System.out.println(false);
     }
   }
 }
 public boolean palindrome(String word)
 {
-  //your code here
+  for(int i=0; i<word.length(); i++){
+  }
   return false;
 }
 public String reverse(String str)
