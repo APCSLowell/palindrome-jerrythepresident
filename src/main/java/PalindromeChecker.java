@@ -41,16 +41,25 @@ public boolean palindrome(String word)
   }
   return false;
 }
-public String noCapitals(String str)
+public Boolean palindrome(String str)
 {
       str.toLowerCase();
+      String result="";
       for(int i = 0; i < str.length(); i++){
      if(!str.substring(i,i+1).equals(" ")){
        result=result + str.substring(i,i+1);
      }
-   for(int i = 0; i < result.length(); i++)
-    if(Character.isLetter(result.charAt(i)))
+      }
+     String result1 ="";
+   for(int i = 0; i < result.length(); i++){
+    if(Character.isLetter(result.charAt(i))){
       result1 = result1 + result.substring(i,i+1);
-  return result1;
+    }
+   }
+  String reverse = ""; 
+          for (int i = result1.length() - 1; i >= 0; i--) {
+            reverse = reverse+ result1.substring(i,i+1);
+        }
+        return reverse==result1;
 }
 }
