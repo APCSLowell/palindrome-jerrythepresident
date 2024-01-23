@@ -37,11 +37,12 @@ public void tester()
 }
 public boolean palindrome(String str)
 {
-      str.toLowerCase();
+ String result0="";
+      result0=str.toLowerCase();
       String result="";
-      for(int i = 0; i < str.length(); i++){
-     if(!str.substring(i,i+1).equals(" ")){
-       result=result + str.substring(i,i+1);
+      for(int i = 0; i < result0.length(); i++){
+     if(!result0.substring(i,i+1).equals(" ")){
+       result=result + result0.substring(i,i+1);
      }
       }
      String result1 ="";
