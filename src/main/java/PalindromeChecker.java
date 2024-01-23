@@ -55,6 +55,6 @@ public boolean palindrome(String str)
           for (int i = result1.length() - 1; i >= 0; i--) {
             reverse = reverse+ result1.substring(i,i+1);
         }
-        return reverse==result1;
+        return reverse.equals(result1);
 }
 }
